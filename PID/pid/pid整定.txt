@@ -1,0 +1,189 @@
+
+
+
+
+
+
+
+1、PID 简介
+
+A proportional–integral–derivative controller (PID controller) is a control loop feedback mechanism (controller) commonly used in industrial control systems
+
+    PID  = [ Kp*e(t)] + [Ki*∫(0-t)e(τ)dτ] + [Kd*de(t)/dt]
+
+1.1、比例项
+
+Pout = [ Kp*e(t)]	
+
+令x=e(t)则函数y=f(x)的形式f的取值为一个固定的数值，这样在数轴上将会是一条固定斜率K的线。
+他同步反映了自变量x的走向，f则成为走向的增益。也就是Kp,因为成线性成比例所以叫做比例项。
+增益的大小决定了输出的值的大小。增益大输出值偏大，增益小输出值偏小。
+比例是误差的对当前对当前进行影响结果就是曲线是震荡的，系数越大震荡的越剧烈。反之
+
+1.2、积分项：
+
+Iout =[Ki*∫(0-t)e(τ)dτ]
+
+积分的概念好早就在学习，有过许多次的尝试和请教，直到现在才逐渐的清晰起来，
+必须从实际出发去着手理解，单纯的看公式很难理解，因为毕竟我文化知识是个槛
+首先我明确了积分是用来计算不规则曲线所包围的面积的。
+然后明确第二个概念是类似割圆术的，把她包围的面积分解成小块也就是所谓的dt
+再有明确第三个概念就是极限的概念，早在数年前W生的高数书里面有看过lim->x,但是没有明白是什么意思，事实上所谓的极限是无限接近而不等于的那个值。
+积分里面就是相邻的dt->0也就是说小到线变成了点，点和点的距离很小很小。这时候在两点之的x,y坐标就是个矩形，就可以计算矩形的面积L*H然后一直加下去。
+最后把所有的面积求和就得到了不规则曲线包围的面积了。
+之前请教过J和W 代数式的含义现在可以解释上面的公式了，
+																												
+∫(0-t)e(τ)dτ 0-t 表示X轴的时间坐标0-t这区间内，e(τ)	首先是 τ在区间0-t上，那么e(τ)就代表了在τ时间内的误差值，散点定义在纵坐标上
+这个e(τ)不一定是个线性，完全可能是个不规则的函数，然后dτ是对0-t之间的分成的份数，也就是dτ=t/lim->0，那么也就是在横坐标的值，
+他们之间的乘积就是那e(τ)*dt所包围的一小块的面积。前面的积分∫(0-t)我的理解可以等价于求和运算，将0-t区间内所有的e(τ)*dt小块加起来，
+那么他们的面积就应该是e(τ)在区间0-t之内的面积了。显然她的值是随着时间t增加而增加。数学上的dt->0在实际上是不可能的所以这就牵扯到dt的粒度，
+dt粒度约小则e(τ)包围的面积计算的约接近真实的值也大，反之粗略并值也相对小。事实上数学上的dt时间就是实际进行运算的频率罢了。
+
+最后一个就是Ki这个是积分的增益。显然它越大则定积分所产生的值成倍数的增加，越小则积分值成倍的减小。
+抛开Ki不看的话就是采样计算时间内计算的面积之和，他需要时间去累计，输出值看加入积分后结果增大，但是比纯比例要稳定了。
+积分是记录了误差的过去。会使的系统变得很稳定。但是还是会在目标值上下轻微的震荡。
+			 
+
+1.3、微分项：
+
+Dout = [Kd*de(t)/dt]
+
+微分的概念一直不理解，他们总是灌输导数的概念，而我不能理解什么叫做导数。彻底的不理解。直到百度发现导数斜率，斜率我是知道的。
+相应的微分的概念也要从实际出发。但是不像积分可以理解为不规则曲线的包围面积，微分却无法理解什么是需要微分的。
+直到f的出现讲到切线的概念。和直线的切线就是其本身。在加上之前的积分的dt概念所以得以继续
+任意一条不规则的线段，对其分割位无数份limx->0 ,那么又回到了和积分一样的概念上每一份都变成了点，他们挨得很近。他们彼此的连线变成了规则的线。
+宏观上他们是不规则的线。微观上他们点和点之间是规则的线。那么两点之间的连线和X轴的夹角就是斜率了。
+Kd就是微分增益控制，越大则微分值成倍提高，减小则微分值减小。对结果的影响小。
+微分是对误差未来走向，相当于有一定的提前量和预测性。会减小积分带来的震荡。使曲线输出趋于平滑并等于设定值。
+
+
+
+1.4、参数整定
+参数整定就是对Kp\Ki\Kd进行配置。
+第一种方法
+
+调整比例其他参数=0
+先对比例进行整定，逐渐的增加Kp并使得输出曲线接近目标值，
+此时关注开始的一个阶段它的上升曲线比较陡，之后接着是震荡，然后越来越小，后半部分呈现出纹波的形状，
+证明她正在震荡，这种震荡可以查看输出驱动曲线可以明显的显现出来。我的整定是整定到离目标值约1-0.5左右。
+此时再进行积分的整定保持比例不变的前提。开始增加积分值。此时发现曲线在开始的时候震荡的很大，
+超过比例的一大截。这是正常的，因为积分项的引入值变大了，输出对应的变大了，这样相当于开始的比例上抬了，所以震荡会加剧，
+调整的同时看后半部分的曲线是否接近目标，会发现真的很稳定并且在目标值以内0.5左右。偶尔会超过1，这时就应该停止整定
+最后进行微分的整定。保持比例微分不变的前提条件，逐渐的增加微分值，然后使开始的比较的大的震荡曲线减小到目标值左右，
+比如以50为目标则原来在PI条件下峰值可以达到52，那么调整微分使她慢慢回落到50左右。不足达不到就慢慢的增加微分系数，直到达到之后。
+停止所有的整定工作。保存KP KI KD的值。并写入到PID中。
+
+第二种方法
+
+就是 齐格勒-尼克尔斯 整定。目前不用不做学习了。
+
+
+1.5、微积分的时间dt
+微积分的时间dt是微分和积分共同使用的粒度，它是X坐标的T时间，转换为运算就是运算的频率。单位是秒。这个需要根据对象的属性进行调整。
+温度这种滞后的向大了调整，电机伺服这种要小才能跟上。 为系统选择一个合适的微积分时间。给积分器和微分器提供计算基准是必须的。
+
+
+1.6、输出推动
+
+按照0-100%输出推动执行器件即可。做好上下限的窗口。没有什么特殊要求的情况下是这样。
+
+
+
+20160715 老王
+
+
+The PID control scheme is named after its three correcting terms,
+whose sum constitutes the manipulated variable (MV). 
+The proportional, integral, and derivative terms are summed to calculate the output of the PID controller. 
+Defining u(t) as the controller output, the final form of the PID algorithm is:
+
+   	u(t) =MV(t) = [ Kp*e(t)] + [Ki*∫(0-t)e(τ)dτ] + [Kd*de(t)/dt]
+
+where
+
+Kp: Proportional gain, a tuning parameter
+Ki: Integral gain, a tuning parameter
+Kd: Derivative gain, a tuning parameter
+e(t): Error=SP-PV(t)
+SP: Set Point
+PV(t): Process Variable
+t: Time or instantaneous time (the present)
+τ: Variable of integration; takes on values from time 0 to the present t.
+Equivalently, the transfer function in the Laplace Domain of the PID controller is
+
+L(s)=Kp+Ki/s+Kds
+
+where
+
+{ s} s: complex number frequency
+
+
+
+Proportional term
+
+Plot of PV vs time, for three values of Kp (Ki and Kd held constant)
+The proportional term produces an output value that is proportional to the current error value.
+ The proportional response can be adjusted by multiplying the error by a constant Kp, called the proportional gain constant.
+
+The proportional term is given by:
+
+ Pout =Kp*e(t)
+
+A high proportional gain results in a large change in the output for a given change in the error.
+If the proportional gain is too high, 
+the system can become unstable (see the section on loop tuning). 
+In contrast, a small gain results in a small output response to a large input error,
+and a less responsive or less sensitive controller. 
+If the proportional gain is too low, the control action may be too small when responding to system disturbances. 
+Tuning theory and industrial practice indicate that the proportional term should contribute the bulk of the output change.
+
+
+Steady-state error
+Because a non-zero error is required to drive it, 
+a proportional controller generally operates with a so-called steady-state error.[a] 
+Steady-state error (SSE) is proportional to the process gain and inversely proportional to proportional gain. 
+SSE may be mitigated by adding a compensating bias term to the setpoint or output, 
+or corrected dynamically by adding an integral term.
+
+
+
+Integral term[edit]
+
+Plot of PV vs time, for three values of Ki (Kp and Kd held constant)
+The contribution from the integral term is proportional to both the magnitude of the error and the duration of the error. 
+The integral in a PID controller is the sum of the instantaneous error over time and gives the accumulated offset that should have been corrected previously. 
+The accumulated error is then multiplied by the integral gain ( Ki) and added to the controller output.
+
+The integral term is given by:
+
+Iout =[Ki*∫(0-t)e(τ)dτ]
+The integral term accelerates the movement of the process towards setpoint and eliminates the residual steady-state error that occurs with a pure proportional controller. 
+However, since the integral term responds to accumulated errors from the past, it can cause the present value to overshoot the setpoint value (see the section on loop tuning).
+
+Derivative term[edit]
+
+Plot of PV vs time, for three values of Kd (Kp and Ki held constant)
+The derivative of the process error is calculated by determining the slope of the error over time and multiplying this rate of change by the derivative gain Kd. 
+The magnitude of the contribution of the derivative term to the overall control action is termed the derivative gain, Kd.
+
+The derivative term is given by:
+
+Dout = [Kd*de(t)/dt]
+
+Derivative action predicts system behavior and thus improves settling time and stability of the system.[12][13]
+ An ideal derivative is not causal, so that implementations of PID controllers include an additional low pass filtering for the derivative term,
+  to limit the high frequency gain and noise.[14] Derivative action is seldom used in practice though - by one estimate in only 25% of deployed controllers[14] 
+  - because of its variable impact on system stability in real-world applications.[14]
+
+ */
+
+2、输出模型和传递函数
+
+
+3、输入参数和dt时间
+
+
+4、整定参数
+
+
+

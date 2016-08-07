@@ -1,0 +1,1141 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Administrator\Desktop\github\PID\SDK\lwip_gnu.uvproj
+Project File Date:  07/22/2016
+
+<h2>Output:</h2>
+compiling ds12864.c...
+..\key\key.h(37): warning:  #1-D: last line of file ends without a newline
+..\key\key.h:   #endif
+..\key\key.h:         ^
+..\DS12864\ds12864.c(427): warning:  #223-D: function "memcpy" declared implicitly
+..\DS12864\ds12864.c:              memcpy(&RunStat_ds12864[Start],"运行",6);
+..\DS12864\ds12864.c:              ^
+..\DS12864\ds12864.c(431): warning:  #223-D: function "memcpy" declared implicitly
+..\DS12864\ds12864.c:              memcpy(&RunStat_ds12864[Start],"停止",6);
+..\DS12864\ds12864.c:              ^
+..\DS12864\ds12864.c(422): warning:  #177-D: variable "d" was declared but never referenced
+..\DS12864\ds12864.c:   {        static char d=0,b=0;
+..\DS12864\ds12864.c:                        ^
+..\DS12864\ds12864.c(422): warning:  #177-D: variable "b" was declared but never referenced
+..\DS12864\ds12864.c:   {        static char d=0,b=0;
+..\DS12864\ds12864.c:                            ^
+..\DS12864\ds12864.c(506): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+..\DS12864\ds12864.c:                      print(line1); 
+..\DS12864\ds12864.c:                            ^
+..\DS12864\ds12864.c(508): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+..\DS12864\ds12864.c:                      print(line2); 
+..\DS12864\ds12864.c:                            ^
+..\DS12864\ds12864.c(510): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+..\DS12864\ds12864.c:                      print(line3);
+..\DS12864\ds12864.c:                            ^
+..\DS12864\ds12864.c(512): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+..\DS12864\ds12864.c:                      print(line4);
+..\DS12864\ds12864.c:                            ^
+..\DS12864\ds12864.c(520): warning:  #1-D: last line of file ends without a newline
+..\DS12864\ds12864.c:   #endif
+..\DS12864\ds12864.c:         ^
+..\DS12864\ds12864.c: ..\DS12864\ds12864.c: 10 warnings, 0 errors
+..\DS12864\ds12864.c - 0 Error(s), 10 Warning(s).
+Build target 'pid'
+compiling key.c...
+..\key\key.h(37): warning:  #1-D: last line of file ends without a newline
+..\key\key.h:   #endif
+..\key\key.h:         ^
+..\key\key.c(71): error:  #20: identifier "GPIO_Pin_112" is undefined
+..\key\key.c:     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10|GPIO_Pin_11|GPIO_Pin_112 ;
+..\key\key.c:                                                           ^
+..\key\key.c(198): warning:  #177-D: variable "flage" was declared but never referenced
+..\key\key.c:   static char flage=0;
+..\key\key.c:               ^
+..\key\key.c: ..\key\key.c: 2 warnings, 1 error
+Target not created
+Build target 'pid'
+compiling key.c...
+..\key\key.h(37): warning:  #1-D: last line of file ends without a newline
+..\key\key.h:   #endif
+..\key\key.h:         ^
+..\key\key.c(198): warning:  #177-D: variable "flage" was declared but never referenced
+..\key\key.c:   static char flage=0;
+..\key\key.c:               ^
+..\key\key.c: ..\key\key.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=60744 RO-data=900 RW-data=1660 ZI-data=49276  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 2 Warning(s).
+Build target 'pid'
+compiling key.c...
+..\key\key.h(37): warning:  #1-D: last line of file ends without a newline
+..\key\key.h:   #endif
+..\key\key.h:         ^
+..\key\key.c(198): warning:  #177-D: variable "flage" was declared but never referenced
+..\key\key.c:   static char flage=0;
+..\key\key.c:               ^
+..\key\key.c: ..\key\key.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=60744 RO-data=900 RW-data=1660 ZI-data=49276  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 2 Warning(s).
+compiling key.c...
+..\key\key.h(37): warning:  #1-D: last line of file ends without a newline
+..\key\key.h:   #endif
+..\key\key.h:         ^
+..\key\key.c(198): warning:  #177-D: variable "flage" was declared but never referenced
+..\key\key.c:   static char flage=0;
+..\key\key.c:               ^
+..\key\key.c: ..\key\key.c: 2 warnings, 0 errors
+..\key\key.c - 0 Error(s), 2 Warning(s).
+Build target 'pid'
+compiling netconf.c...
+..\myself\src\netconf.c(173): warning:  #223-D: function "tcp_tmr" declared implicitly
+..\myself\src\netconf.c:       tcp_tmr();
+..\myself\src\netconf.c:       ^
+..\myself\src\netconf.c(53): warning:  #177-D: variable "IPaddress" was declared but never referenced
+..\myself\src\netconf.c:   static uint32_t IPaddress = 0;
+..\myself\src\netconf.c:                   ^
+..\myself\src\netconf.c: ..\myself\src\netconf.c: 2 warnings, 0 errors
+compiling stm32f10x_it.c...
+..\myself\src\stm32f10x_it.c(155): warning:  #1295-D: Deprecated declaration Read_Eth_Packet - give arg types
+..\myself\src\stm32f10x_it.c:     extern void Read_Eth_Packet(); //读取数据包大BUFF中
+..\myself\src\stm32f10x_it.c:                 ^
+..\myself\src\stm32f10x_it.c: ..\myself\src\stm32f10x_it.c: 1 warning, 0 errors
+compiling stm32f107.c...
+compiling client_tcpudp.c...
+..\myself\src\client_tcpudp.c(77): warning:  #1295-D: Deprecated declaration Getmeminf - give arg types
+..\myself\src\client_tcpudp.c:     extern char* Getmeminf();
+..\myself\src\client_tcpudp.c:                  ^
+..\myself\src\client_tcpudp.c(130): warning:  #177-D: variable "len" was declared but never referenced
+..\myself\src\client_tcpudp.c:                                                     uint16_t len;
+..\myself\src\client_tcpudp.c:                                                              ^
+..\myself\src\client_tcpudp.c(479): warning:  #550-D: variable "dst_ip_addr" was set but never used
+..\myself\src\client_tcpudp.c:                   ip_addr_t dst_ip_addr;
+..\myself\src\client_tcpudp.c:                             ^
+..\myself\src\client_tcpudp.c(535): warning:  #940-D: missing return statement at end of non-void function "Tcp_recv"
+..\myself\src\client_tcpudp.c:   }
+..\myself\src\client_tcpudp.c:   ^
+..\myself\src\client_tcpudp.c: ..\myself\src\client_tcpudp.c: 4 warnings, 0 errors
+compiling filesystem.c...
+..\myself\src\filesystem.c(43): warning:  #940-D: missing return statement at end of non-void function "FindMP3"
+..\myself\src\filesystem.c:   }
+..\myself\src\filesystem.c:   ^
+..\myself\src\filesystem.c(66): warning:  #167-D: argument of type "euint8 *" is incompatible with parameter of type "eint8 *"
+..\myself\src\filesystem.c:         if (ls_openDir(&localist, &fts.myFs, filename) != 0)
+..\myself\src\filesystem.c:                                              ^
+..\myself\src\filesystem.c(76): warning:  #2748-D: null argument provided for parameter marked with attribute "nonnull"
+..\myself\src\filesystem.c:                      memcpy(FileNameu,(void*)0,12);  
+..\myself\src\filesystem.c:                                       ^
+..\myself\src\filesystem.c(53): warning:  #550-D: variable "Attributeu" was set but never used
+..\myself\src\filesystem.c:     euint8 Attributeu;
+..\myself\src\filesystem.c:            ^
+..\myself\src\filesystem.c(128): warning:  #177-D: variable "FileNameu" was declared but never referenced
+..\myself\src\filesystem.c:     euint8 FileNameu[12];
+..\myself\src\filesystem.c:            ^
+..\myself\src\filesystem.c(129): warning:  #177-D: variable "FileSizeu" was declared but never referenced
+..\myself\src\filesystem.c:     euint32 FileSizeu;
+..\myself\src\filesystem.c:             ^
+..\myself\src\filesystem.c(130): warning:  #177-D: variable "Attributeu" was declared but never referenced
+..\myself\src\filesystem.c:     euint8 Attributeu;
+..\myself\src\filesystem.c:            ^
+..\myself\src\filesystem.c(172): warning:  #192-D: unrecognized character escape sequence
+..\myself\src\filesystem.c:     if (file_fopen(&myfile_SD, &myefs1.myFs, "\.mp3", 'r') != 0)
+..\myself\src\filesystem.c:                                               ^
+..\myself\src\filesystem.c(169): warning:  #550-D: variable "datalen" was set but never used
+..\myself\src\filesystem.c:      euint32 datalen;
+..\myself\src\filesystem.c:              ^
+..\myself\src\filesystem.c(189): warning:  #550-D: variable "datalen" was set but never used
+..\myself\src\filesystem.c:             euint32 datalen;
+..\myself\src\filesystem.c:                     ^
+..\myself\src\filesystem.c(266): warning:  #940-D: missing return statement at end of non-void function "FS_Write"
+..\myself\src\filesystem.c:   }  
+..\myself\src\filesystem.c:   ^
+..\myself\src\filesystem.c(339): warning:  #940-D: missing return statement at end of non-void function "FS_Writehtml"
+..\myself\src\filesystem.c:   }  
+..\myself\src\filesystem.c:   ^
+..\myself\src\filesystem.c: ..\myself\src\filesystem.c: 12 warnings, 0 errors
+compiling netbios.c...
+..\netbios\netbios.c(327): warning:  #236-D: controlling expression is constant
+..\netbios\netbios.c:     LWIP_ASSERT("NetBIOS name is too long!", strlen(NETBIOS_LWIP_NAME) < NETBIOS_NAME_LEN);
+..\netbios\netbios.c:     ^
+..\netbios\netbios.c: ..\netbios\netbios.c: 1 warning, 0 errors
+compiling tftpserver.c...
+compiling tftputils.c...
+compiling DS18B20SROM.c...
+..\myself\src\DS18B20SROM.c(561): warning:  #223-D: function "FS_Writehtml" declared implicitly
+..\myself\src\DS18B20SROM.c:    FS_Writehtml((char*)temp,33);
+..\myself\src\DS18B20SROM.c:    ^
+..\myself\src\DS18B20SROM.c: ..\myself\src\DS18B20SROM.c: 1 warning, 0 errors
+compiling ds18b20sech.c...
+..\myself\src\ds18b20sech.c(50): warning:  #1295-D: Deprecated declaration OWFirst - give arg types
+..\myself\src\ds18b20sech.c:   int  OWFirst();
+..\myself\src\ds18b20sech.c:        ^
+..\myself\src\ds18b20sech.c(51): warning:  #1295-D: Deprecated declaration OWNext - give arg types
+..\myself\src\ds18b20sech.c:   int  OWNext();
+..\myself\src\ds18b20sech.c:        ^
+..\myself\src\ds18b20sech.c(52): warning:  #1295-D: Deprecated declaration OWVerify - give arg types
+..\myself\src\ds18b20sech.c:   int  OWVerify();
+..\myself\src\ds18b20sech.c:        ^
+..\myself\src\ds18b20sech.c(54): warning:  #1295-D: Deprecated declaration OWFamilySkipSetup - give arg types
+..\myself\src\ds18b20sech.c:   void OWFamilySkipSetup();
+..\myself\src\ds18b20sech.c:        ^
+..\myself\src\ds18b20sech.c(55): warning:  #1295-D: Deprecated declaration OWReset - give arg types
+..\myself\src\ds18b20sech.c:   int  OWReset();
+..\myself\src\ds18b20sech.c:        ^
+..\myself\src\ds18b20sech.c(58): warning:  #1295-D: Deprecated declaration OWReadBit - give arg types
+..\myself\src\ds18b20sech.c:   unsigned char OWReadBit();
+..\myself\src\ds18b20sech.c:                 ^
+..\myself\src\ds18b20sech.c(59): warning:  #1295-D: Deprecated declaration OWSearch - give arg types
+..\myself\src\ds18b20sech.c:   int  OWSearch();
+..\myself\src\ds18b20sech.c:        ^
+..\myself\src\ds18b20sech.c(402): warning:  #1-D: last line of file ends without a newline
+..\myself\src\ds18b20sech.c:    }
+..\myself\src\ds18b20sech.c:     ^
+..\myself\src\ds18b20sech.c: ..\myself\src\ds18b20sech.c: 8 warnings, 0 errors
+compiling main.c...
+..\pid\pidctrl.h(65): warning:  #1295-D: Deprecated declaration AutoRunPowerAdjTask - give arg types
+..\pid\pidctrl.h:   void AutoRunPowerAdjTask();
+..\pid\pidctrl.h:        ^
+..\key\key.h(37): warning:  #1-D: last line of file ends without a newline
+..\key\key.h:   #endif
+..\key\key.h:         ^
+..\myself\src\main.c(104): warning:  #223-D: function "netbios_init" declared implicitly
+..\myself\src\main.c:                     netbios_init();
+..\myself\src\main.c:                     ^
+..\myself\src\main.c(105): warning:  #223-D: function "tftpd_init" declared implicitly
+..\myself\src\main.c:                     tftpd_init();
+..\myself\src\main.c:                     ^
+..\myself\src\main.c(109): warning:  #14-D: extra text after expected end of preprocessing directive
+..\myself\src\main.c:                     #ifdef USED_FILESYSTEM && USED_HTTP
+..\myself\src\main.c:                                            ^
+..\myself\src\main.c(127): warning:  #223-D: function "TcpTestThread" declared implicitly
+..\myself\src\main.c:                             TcpTestThread(LocalTime);
+..\myself\src\main.c:                             ^
+..\myself\src\main.c: ..\myself\src\main.c: 6 warnings, 0 errors
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling stm32_eth.c...
+compiling def.c...
+compiling dhcp.c...
+compiling dns.c...
+compiling init.c...
+compiling mem.c...
+..\GNU源码\lwip-1.4.1\src\core\mem.c(285): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     LWIP_ASSERT("plug_holes: mem >= ram", (u8_t *)mem >= ram);
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\mem.c(286): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     LWIP_ASSERT("plug_holes: mem < ram_end", (u8_t *)mem < (u8_t *)ram_end);
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\mem.c(287): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     LWIP_ASSERT("plug_holes: mem->used == 0", mem->used == 0);
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\mem.c(290): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     LWIP_ASSERT("plug_holes: mem->next <= MEM_SIZE_ALIGNED", mem->next <= MEM_SIZE_ALIGNED);
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\mem.c(322): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     LWIP_ASSERT("Sanity check alignment",
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\mem.c(344): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\mem.c:       LWIP_ASSERT("failed to create mem_mutex", 0);
+..\GNU源码\lwip-1.4.1\src\core\mem.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\mem.c(364): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     LWIP_ASSERT("mem_free: sanity check alignment", (((mem_ptr_t)rmem) & (MEM_ALIGNMENT-1)) == 0);
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\mem.c(366): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     LWIP_ASSERT("mem_free: legal memory", (u8_t *)rmem >= (u8_t *)ram &&
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\mem.c(383): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     LWIP_ASSERT("mem_free: mem->used", mem->used);
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\mem.c(434): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     LWIP_ASSERT("mem_trim: legal memory", (u8_t *)rmem >= (u8_t *)ram &&
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\mem.c(452): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     LWIP_ASSERT("mem_trim can only shrink memory", newsize <= size);
+..\GNU源码\lwip-1.4.1\src\core\mem.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\mem.c(654): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\mem.c:             LWIP_ASSERT("mem_malloc: !lfree->used", ((lfree == ram_end) || (!lfree->used)));
+..\GNU源码\lwip-1.4.1\src\core\mem.c:             ^
+..\GNU源码\lwip-1.4.1\src\core\mem.c(658): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\mem.c:           LWIP_ASSERT("mem_malloc: allocated memory not above ram_end.",
+..\GNU源码\lwip-1.4.1\src\core\mem.c:           ^
+..\GNU源码\lwip-1.4.1\src\core\mem.c(660): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\mem.c:           LWIP_ASSERT("mem_malloc: allocated memory properly aligned.",
+..\GNU源码\lwip-1.4.1\src\core\mem.c:           ^
+..\GNU源码\lwip-1.4.1\src\core\mem.c(662): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\mem.c:           LWIP_ASSERT("mem_malloc: sanity check alignment",
+..\GNU源码\lwip-1.4.1\src\core\mem.c:           ^
+..\GNU源码\lwip-1.4.1\src\core\mem.c: ..\GNU源码\lwip-1.4.1\src\core\mem.c: 15 warnings, 0 errors
+compiling memp.c...
+..\GNU源码\lwip-1.4.1\src\core\memp.c(400): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\memp.c:     LWIP_ERROR("memp_malloc: type < MEMP_MAX", (type < MEMP_MAX), return NULL;);
+..\GNU源码\lwip-1.4.1\src\core\memp.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\memp.c(422): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\memp.c:       LWIP_ASSERT("memp_malloc: memp properly aligned",
+..\GNU源码\lwip-1.4.1\src\core\memp.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\memp.c(454): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\memp.c:     LWIP_ASSERT("memp_free: mem properly aligned",
+..\GNU源码\lwip-1.4.1\src\core\memp.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\memp.c: ..\GNU源码\lwip-1.4.1\src\core\memp.c: 3 warnings, 0 errors
+compiling netif.c...
+..\GNU源码\lwip-1.4.1\src\core\netif.c(143): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\netif.c:     LWIP_ASSERT("No init function given", init != NULL);
+..\GNU源码\lwip-1.4.1\src\core\netif.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\netif.c: ..\GNU源码\lwip-1.4.1\src\core\netif.c: 1 warning, 0 errors
+compiling pbuf.c...
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(232): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       LWIP_ASSERT("pbuf_alloc: bad pbuf layer", 0);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(250): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       LWIP_ASSERT("pbuf_alloc: pbuf p->payload properly aligned",
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(256): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       LWIP_ASSERT("check p->payload + p->len does not overflow pbuf",
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(259): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       LWIP_ASSERT("PBUF_POOL_BUFSIZE must be bigger than MEM_ALIGNMENT",
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(286): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:         LWIP_ASSERT("rem_len < max_u16_t", rem_len < 0xffff);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(291): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:         LWIP_ASSERT("pbuf_alloc: pbuf q->payload properly aligned",
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(293): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:         LWIP_ASSERT("check p->payload + p->len does not overflow pbuf",
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(318): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       LWIP_ASSERT("pbuf_alloc: pbuf->payload properly aligned",
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(340): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       LWIP_ASSERT("pbuf_alloc: erroneous type", 0);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(391): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       LWIP_ASSERT("pbuf_alloced_custom: bad pbuf layer", 0);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(436): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     LWIP_ASSERT("pbuf_realloc: p != NULL", p != NULL);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(437): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     LWIP_ASSERT("pbuf_realloc: sane p->type", p->type == PBUF_POOL ||
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(460): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       LWIP_ASSERT("grow < max_u16_t", grow < 0xffff);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(464): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       LWIP_ASSERT("pbuf_realloc: q != NULL", q != NULL);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(474): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       LWIP_ASSERT("mem_trim returned q == NULL", q != NULL);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(517): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     LWIP_ASSERT("p != NULL", p != NULL);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(525): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       LWIP_ERROR("increment_magnitude <= p->len", (increment_magnitude <= p->len), return 1;);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(571): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       LWIP_ASSERT("bad pbuf type", 0);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(625): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       LWIP_ASSERT("p != NULL", p != NULL);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(635): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     LWIP_ASSERT("pbuf_free: sane type",
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(650): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       LWIP_ASSERT("pbuf_free: p->ref > 0", p->ref > 0);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(664): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:           LWIP_ASSERT("pc->custom_free_function != NULL", pc->custom_free_function != NULL);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:           ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(749): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     LWIP_ERROR("(h != NULL) && (t != NULL) (programmer violates API)",
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(758): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     LWIP_ASSERT("p->tot_len == p->len (of last pbuf in chain)", p->tot_len == p->len);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(759): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     LWIP_ASSERT("p->next == NULL", p->next == NULL);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(812): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       LWIP_ASSERT("p->tot_len == p->len + q->tot_len", q->tot_len == p->tot_len - p->len);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(829): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     LWIP_ASSERT("p->tot_len == p->len", p->tot_len == p->len);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(860): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     LWIP_ERROR("pbuf_copy: target not big enough to hold source", ((p_to != NULL) &&
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(877): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       LWIP_ASSERT("offset_to <= p_to->len", offset_to <= p_to->len);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(878): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       LWIP_ASSERT("offset_from <= p_from->len", offset_from <= p_from->len);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(888): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:         LWIP_ERROR("p_to != NULL", (p_to != NULL) || (p_from == NULL) , return ERR_ARG;);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(893): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:         LWIP_ERROR("pbuf_copy() does not allow packet queues!\n",
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(898): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:         LWIP_ERROR("pbuf_copy() does not allow packet queues!\n",
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(925): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     LWIP_ERROR("pbuf_copy_partial: invalid buf", (buf != NULL), return 0;);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(926): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     LWIP_ERROR("pbuf_copy_partial: invalid dataptr", (dataptr != NULL), return 0;);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(973): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     LWIP_ERROR("pbuf_take: invalid buf", (buf != NULL), return 0;);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(974): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     LWIP_ERROR("pbuf_take: invalid dataptr", (dataptr != NULL), return 0;);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(982): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       LWIP_ASSERT("pbuf_take: invalid pbuf", p != NULL);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(993): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     LWIP_ASSERT("did not copy all data", total_copy_len == 0 && copied_total == len);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c(1023): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     LWIP_ASSERT("pbuf_copy failed", err == ERR_OK);
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\pbuf.c: ..\GNU源码\lwip-1.4.1\src\core\pbuf.c: 40 warnings, 0 errors
+compiling raw.c...
+..\GNU源码\lwip-1.4.1\src\core\raw.c(231): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\raw.c:         LWIP_ASSERT("Can't restore header we just removed!", 0);
+..\GNU源码\lwip-1.4.1\src\core\raw.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\raw.c: ..\GNU源码\lwip-1.4.1\src\core\raw.c: 1 warning, 0 errors
+compiling stats.c...
+compiling sys.c...
+compiling tcp.c...
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(180): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:         LWIP_ASSERT("pcb->flags & TF_RXCLOSED", pcb->flags & TF_RXCLOSED);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(368): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     LWIP_ASSERT("don't call tcp_abort/tcp_abandon for listen-pcbs",
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(444): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     LWIP_ERROR("tcp_bind: can only bind in state CLOSED", pcb->state == CLOSED, return ERR_VAL);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(533): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     LWIP_ERROR("tcp_listen: pcb already connected", pcb->state == CLOSED, return NULL);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(604): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:         LWIP_ASSERT("new_rcv_ann_wnd <= 0xffff", new_rcv_ann_wnd <= 0xffff);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(625): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     LWIP_ASSERT("don't call tcp_recved for listen-pcbs",
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(627): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     LWIP_ASSERT("tcp_recved: len would wrap rcv_wnd\n",
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(700): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     LWIP_ERROR("tcp_connect: can only connect from state CLOSED", pcb->state == CLOSED, return ERR_ISCONN);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(819): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:       LWIP_ASSERT("tcp_slowtmr: active pcb->state != CLOSED\n", pcb->state != CLOSED);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(820): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:       LWIP_ASSERT("tcp_slowtmr: active pcb->state != LISTEN\n", pcb->state != LISTEN);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(821): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:       LWIP_ASSERT("tcp_slowtmr: active pcb->state != TIME-WAIT\n", pcb->state != TIME_WAIT);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(963): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:           LWIP_ASSERT("tcp_slowtmr: middle tcp != tcp_active_pcbs", pcb != tcp_active_pcbs);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:           ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(967): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:           LWIP_ASSERT("tcp_slowtmr: first pcb == tcp_active_pcbs", tcp_active_pcbs == pcb);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:           ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(1015): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:       LWIP_ASSERT("tcp_slowtmr: TIME-WAIT pcb->state == TIME-WAIT", pcb->state == TIME_WAIT);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(1031): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:           LWIP_ASSERT("tcp_slowtmr: middle tcp != tcp_tw_pcbs", pcb != tcp_tw_pcbs);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:           ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(1035): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:           LWIP_ASSERT("tcp_slowtmr: first pcb == tcp_tw_pcbs", tcp_tw_pcbs == pcb);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:           ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(1067): warning:  #174-D: expression has no effect
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:                      pcb->last_timer == tcp_timer_ctr     ;
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:                      ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(1302): warning:  #117-D: non-void function "tcp_alloc" should return a value
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:                           return;
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:                                 ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(1417): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     LWIP_ASSERT("invalid socket state for recv callback", pcb->state != LISTEN);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(1431): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     LWIP_ASSERT("invalid socket state for sent callback", pcb->state != LISTEN);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(1446): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     LWIP_ASSERT("invalid socket state for err callback", pcb->state != LISTEN);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(1477): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     LWIP_ASSERT("invalid socket state for poll", pcb->state != LISTEN);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(1583): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:       LWIP_ASSERT("unsent segments leaking", pcb->unsent == NULL);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(1584): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:       LWIP_ASSERT("unacked segments leaking", pcb->unacked == NULL);
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c(1592): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     LWIP_ASSERT("tcp_pcb_remove: tcp_pcbs_sane()", tcp_pcbs_sane());
+..\GNU源码\lwip-1.4.1\src\core\tcp.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp.c: ..\GNU源码\lwip-1.4.1\src\core\tcp.c: 25 warnings, 0 errors
+compiling tcp_in.c...
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(171): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:       LWIP_ASSERT("tcp_input: active pcb->state != CLOSED", pcb->state != CLOSED);
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(172): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:       LWIP_ASSERT("tcp_input: active pcb->state != TIME-WAIT", pcb->state != TIME_WAIT);
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(173): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:       LWIP_ASSERT("tcp_input: active pcb->state != LISTEN", pcb->state != LISTEN);
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(182): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:         LWIP_ASSERT("tcp_input: pcb->next != pcb (before cache)", pcb->next != pcb);
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(188): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:         LWIP_ASSERT("tcp_input: pcb->next != pcb (after cache)", pcb->next != pcb);
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(198): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:         LWIP_ASSERT("tcp_input: TIME-WAIT pcb->state == TIME-WAIT", pcb->state == TIME_WAIT);
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(340): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:             LWIP_ASSERT("pcb->refused_data == NULL", pcb->refused_data == NULL);
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:             ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(418): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:     LWIP_ASSERT("tcp_input: tcp_pcbs_sane()", tcp_pcbs_sane());
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(599): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:         LWIP_ASSERT("tcp_input: pcb->state != CLOSED", pcb->state != CLOSED);
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(652): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:         LWIP_ASSERT("pcb->snd_queuelen > 0", (pcb->snd_queuelen > 0));
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(691): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:           LWIP_ASSERT("pcb->accept != NULL", pcb->accept != NULL);
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:           ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(864): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:     LWIP_ASSERT("tcp_receive: wrong state", pcb->state >= ESTABLISHED);
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(1020): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:           LWIP_ASSERT("pcb->snd_queuelen >= pbuf_clen(next->p)", (pcb->snd_queuelen >= pbuf_clen(next->p)));
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:           ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(1031): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:             LWIP_ASSERT("tcp_receive: valid queue length", pcb->unacked != NULL ||
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:             ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(1070): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:         LWIP_ASSERT("pcb->snd_queuelen >= pbuf_clen(next->p)", (pcb->snd_queuelen >= pbuf_clen(next->p)));
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(1079): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:           LWIP_ASSERT("tcp_receive: valid queue length",
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:           ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(1174): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:         LWIP_ASSERT("inseg.p != NULL", inseg.p);
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(1175): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:         LWIP_ASSERT("insane offset!", (off < 0x7fff));
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(1177): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:           LWIP_ASSERT("pbuf too short!", (((s32_t)inseg.p->tot_len) >= off));
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:           ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(1190): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:             LWIP_ASSERT("pbuf_header failed", 0);
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:             ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(1195): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:             LWIP_ASSERT("pbuf_header failed", 0);
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:             ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(1239): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:             LWIP_ASSERT("tcp_receive: segment not trimmed correctly to rcv_wnd\n",
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:             ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c(1298): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:           LWIP_ASSERT("tcp_receive: tcplen > rcv_wnd\n", pcb->rcv_wnd >= tcplen);
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c:           ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_in.c: ..\GNU源码\lwip-1.4.1\src\core\tcp_in.c: 23 warnings, 0 errors
+compiling tcp_out.c...
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(100): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       LWIP_ASSERT("check that first pbuf can hold struct tcp_hdr",
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(259): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:     LWIP_ASSERT("need unchained pbuf", p->next == NULL);
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(328): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       LWIP_ASSERT("tcp_write: pbufs on queue => at least one queue non-empty",
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(331): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       LWIP_ASSERT("tcp_write: no pbufs on queue => both queues empty",
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(382): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:     LWIP_ERROR("tcp_write: arg == NULL (programmer violates API)", 
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(449): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:         LWIP_ASSERT("inconsistent oversize vs. space", oversize_used <= space);
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(457): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       LWIP_ASSERT("inconsistend oversize vs. len", (oversize == 0) || (pos == len));
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(511): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       LWIP_ASSERT("unsent_oversize mismatch (pcb->unsent is NULL)",
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(539): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:         LWIP_ASSERT("tcp_write: check that first pbuf can hold the complete seglen",
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(550): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:         LWIP_ASSERT("oversize == 0", oversize == 0);
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(603): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:         LWIP_ASSERT("prev_seg != NULL", prev_seg != NULL);
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(650): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       LWIP_ASSERT("tcp_write: cannot concatenate when pcb->unsent is empty",
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(683): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       LWIP_ASSERT("tcp_write: valid queue length",
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(704): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       LWIP_ASSERT("tcp_write: valid queue length", pcb->unacked != NULL ||
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(731): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:     LWIP_ASSERT("tcp_enqueue_flags: need either TCP_SYN or TCP_FIN in flags (programmer violates API)",
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(769): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:     LWIP_ASSERT("tcp_enqueue_flags: check that first pbuf can hold optlen",
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(778): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:     LWIP_ASSERT("seg->tcphdr not aligned", ((mem_ptr_t)seg->tcphdr % MEM_ALIGNMENT) == 0);
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(779): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:     LWIP_ASSERT("tcp_enqueue_flags: invalid segment length", seg->len == 0);
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(814): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       LWIP_ASSERT("tcp_enqueue_flags: invalid queue length",
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(907): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:     LWIP_ASSERT("don't call tcp_output for listen-pcbs",
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(964): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       LWIP_ASSERT("RST not expected here!", 
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c(1206): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:     LWIP_ASSERT("check that first pbuf can hold struct tcp_hdr",
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\tcp_out.c: ..\GNU源码\lwip-1.4.1\src\core\tcp_out.c: 22 warnings, 0 errors
+compiling udp.c...
+..\GNU源码\lwip-1.4.1\src\core\udp.c(344): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\udp.c:         LWIP_ASSERT("pbuf_header failed\n", 0);
+..\GNU源码\lwip-1.4.1\src\core\udp.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\udp.c(419): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\udp.c:           LWIP_ASSERT("p->payload == iphdr", (p->payload == iphdr));
+..\GNU源码\lwip-1.4.1\src\core\udp.c:           ^
+..\GNU源码\lwip-1.4.1\src\core\udp.c(609): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\udp.c:     LWIP_ASSERT("check that first pbuf can hold struct udp_hdr",
+..\GNU源码\lwip-1.4.1\src\core\udp.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\udp.c(781): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\udp.c:         LWIP_ASSERT("rebind == 0", rebind == 0);
+..\GNU源码\lwip-1.4.1\src\core\udp.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\udp.c: ..\GNU源码\lwip-1.4.1\src\core\udp.c: 4 warnings, 0 errors
+compiling autoip.c...
+compiling icmp.c...
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c(152): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c:           LWIP_ASSERT("icmp_input: moving p->payload to ip header failed\n", 0);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c:           ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c(161): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c:         LWIP_ASSERT("check that first pbuf can hold struct the ICMP header",
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c(165): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c:           LWIP_ASSERT("icmp_input: copying to new pbuf failed\n", 0);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c:           ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c(171): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c:           LWIP_ASSERT("icmp_input: restoring original p->payload failed\n", 0);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c:           ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c(181): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c:           LWIP_ASSERT("icmp_input: restoring original p->payload failed\n", 0);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c:           ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c(218): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c:         LWIP_ASSERT("Can't move over header in packet", 0);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c(306): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c:     LWIP_ASSERT("check that first pbuf can hold icmp message",
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c: ..\GNU源码\lwip-1.4.1\src\core\ipv4\icmp.c: 7 warnings, 0 errors
+compiling igmp.c...
+compiling inet.c...
+compiling inet_chksum.c...
+..\GNU源码\lwip-1.4.1\src\core\ipv4\inet_chksum.c(354): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\inet_chksum.c:       LWIP_ASSERT("delete me", chksum_len < 0x7fff);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\inet_chksum.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\inet_chksum.c: ..\GNU源码\lwip-1.4.1\src\core\ipv4\inet_chksum.c: 1 warning, 0 errors
+compiling ip.c...
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip.c(668): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip.c:     LWIP_ASSERT("p->ref == 1", p->ref == 1);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip.c(713): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip.c:       LWIP_ASSERT("check that first pbuf can hold struct ip_hdr",
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip.c(825): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip.c:     LWIP_ASSERT("p->ref == 1", p->ref == 1);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip.c: ..\GNU源码\lwip-1.4.1\src\core\ipv4\ip.c: 3 warnings, 0 errors
+compiling ip_addr.c...
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_addr.c(243): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_addr.c:       LWIP_ASSERT("unhandled", 0);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_addr.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_addr.c: ..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_addr.c: 1 warning, 0 errors
+compiling ip_frag.c...
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c(165): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:     LWIP_ASSERT("prev != ipr", prev != ipr);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c(167): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:       LWIP_ASSERT("prev->next == ipr", prev->next == ipr);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c(182): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:       LWIP_ASSERT("pbufs_freed + clen <= 0xffff", pbufs_freed + clen <= 0xffff);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c(198): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:       LWIP_ASSERT("pbufs_freed + clen <= 0xffff", pbufs_freed + clen <= 0xffff);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c(204): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:     LWIP_ASSERT("ip_reass_pbufcount >= clen", ip_reass_pbufcount >= pbufs_freed);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c(313): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:       LWIP_ASSERT("sanity check linked list", prev != NULL);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c(347): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:     LWIP_ASSERT("sizeof(struct ip_reass_helper) <= IP_HLEN",
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c(403): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:         LWIP_ASSERT("check fragments don't overlap", iprh_prev->end <= iprh->start);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c(411): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:         LWIP_ASSERT("no previous fragment, this must be the first fragment!",
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:         ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c(444): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:             LWIP_ASSERT("sanity check", ipr->p != NULL);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:             ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c(445): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:             LWIP_ASSERT("sanity check",
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:             ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c(447): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:             LWIP_ASSERT("validate_datagram:next_pbuf!=NULL",
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:             ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c(449): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:             LWIP_ASSERT("validate_datagram:datagram end!=datagram len",
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:             ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c(633): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:     LWIP_ASSERT("p != NULL", p != NULL);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c(643): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:     LWIP_ASSERT("pcr != NULL", pcr != NULL);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c(644): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:     LWIP_ASSERT("pcr == p", (void*)pcr == (void*)p);
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:     ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c(763): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:       LWIP_ASSERT("this needs a pbuf in one piece!",
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c:       ^
+..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c: ..\GNU源码\lwip-1.4.1\src\core\ipv4\ip_frag.c: 17 warnings, 0 errors
+compiling timers.c...
+compiling api_lib.c...
+compiling err.c...
+compiling tcpip.c...
+compiling netifapi.c...
+compiling netdb.c...
+compiling netbuf.c...
+compiling etharp.c...
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(299): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:         LWIP_ASSERT("state == ETHARP_STATE_PENDING || state >= ETHARP_STATE_STABLE",
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:         ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(369): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:         LWIP_ASSERT("arp_table[i].q == NULL", arp_table[i].q == NULL);
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:         ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(387): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:       LWIP_ASSERT("i < ARP_TABLE_SIZE", i < ARP_TABLE_SIZE);
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:       ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(391): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     LWIP_ASSERT("i < ARP_TABLE_SIZE", i < ARP_TABLE_SIZE);
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(392): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     LWIP_ASSERT("arp_table[i].state == ETHARP_STATE_EMPTY",
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(419): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     LWIP_ASSERT("netif->hwaddr_len must be the same as ETHARP_HWADDR_LEN for etharp!",
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(451): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     LWIP_ASSERT("netif->hwaddr_len == ETHARP_HWADDR_LEN", netif->hwaddr_len == ETHARP_HWADDR_LEN);
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(608): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     LWIP_ASSERT("eth_ret != NULL && ip_ret != NULL",
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(699): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     LWIP_ERROR("netif != NULL", (netif != NULL), return;);
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(785): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:         LWIP_ASSERT("netif->hwaddr_len must be the same as ETHARP_HWADDR_LEN for etharp!",
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:         ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(844): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     LWIP_ASSERT("arp_table[arp_idx].state >= ETHARP_STATE_STABLE",
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(885): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     LWIP_ASSERT("netif != NULL", netif != NULL);
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(886): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     LWIP_ASSERT("q != NULL", q != NULL);
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(887): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     LWIP_ASSERT("ipaddr != NULL", ipaddr != NULL);
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(1049): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     LWIP_ASSERT("arp_table[i].state == PENDING or STABLE",
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(1069): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     LWIP_ASSERT("q != NULL", q != NULL);
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(1086): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:         LWIP_ASSERT("no packet queues allowed!", (p->len != p->tot_len) || (p->next == 0));
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:         ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(1189): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     LWIP_ASSERT("netif != NULL", netif != NULL);
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(1200): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     LWIP_ASSERT("check that first pbuf can hold struct etharp_hdr",
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(1208): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     LWIP_ASSERT("netif->hwaddr_len must be the same as ETHARP_HWADDR_LEN for etharp!",
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:     ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c(1359): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:           LWIP_ASSERT("Can't move over header in packet", 0);
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c:           ^
+..\GNU源码\lwip-1.4.1\src\netif\etharp.c: ..\GNU源码\lwip-1.4.1\src\netif\etharp.c: 21 warnings, 0 errors
+compiling ethernetif.c...
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(295): warning:  #550-D: variable "fd" was set but never used
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:         FrameTypeDef fd;
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:                      ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(414): warning:  #236-D: controlling expression is constant
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     LWIP_ASSERT("netif != NULL", (netif != NULL));
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:     ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c(528): warning:  #223-D: function "Ethernet_Configuration" declared implicitly
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        Ethernet_Configuration();
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c:        ^
+..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: ..\GNU源码\lwip-1.4.1\archport\port\ethernetif.c: 3 warnings, 0 errors
+compiling core_cm3.c...
+assembling startup_stm32f10x_cl.s...
+compiling system_stm32f10x.c...
+compiling dir.c...
+..\efsl\source\dir.c(245): warning:  #1293-D: assignment in condition
+..\efsl\source\dir.c:                   if((fclus=dir_findinBuf(buf,fatname,loc,mode))){
+..\efsl\source\dir.c:                      ^
+..\efsl\source\dir.c(274): warning:  #1293-D: assignment in condition
+..\efsl\source\dir.c:                   if((cluster=dir_findinCluster(fs,Cache.DiscCluster,fatname,loc,mode))){
+..\efsl\source\dir.c:                      ^
+..\efsl\source\dir.c(296): warning:  #1293-D: assignment in condition
+..\efsl\source\dir.c:                   if((fclus=dir_findinBuf(buf,fatname,loc,mode))){
+..\efsl\source\dir.c:                      ^
+..\efsl\source\dir.c(322): warning:  #1293-D: assignment in condition
+..\efsl\source\dir.c:           while((next=file_normalToFatName(next,ffnamec))){
+..\efsl\source\dir.c:                 ^
+..\efsl\source\dir.c: ..\efsl\source\dir.c: 4 warnings, 0 errors
+compiling disc.c...
+compiling efs.c...
+compiling extract.c...
+compiling fat.c...
+compiling file.c...
+compiling fs.c...
+compiling ioman.c...
+compiling ls.c...
+compiling mkfs.c...
+compiling partition.c...
+compiling plibc.c...
+compiling time.c...
+compiling ui.c...
+compiling sd.c...
+..\efsl\source\interface\sd.c(221): warning:  #940-D: missing return statement at end of non-void function "sd_Init"
+..\efsl\source\interface\sd.c:   }
+..\efsl\source\interface\sd.c:   ^
+..\efsl\source\interface\sd.c(285): warning:  #175-D: subscript out of range
+..\efsl\source\interface\sd.c:                  cmd_buffercrc[4]= (euint8) (paramy);
+..\efsl\source\interface\sd.c:                  ^
+..\efsl\source\interface\sd.c(518): warning:  #177-D: variable "SPI_InitStructure" was declared but never referenced
+..\efsl\source\interface\sd.c:   {        SPI_InitTypeDef   SPI_InitStructure;
+..\efsl\source\interface\sd.c:                              ^
+..\efsl\source\interface\sd.c(524): warning:  #177-D: variable "card_capacity" was declared but never referenced
+..\efsl\source\interface\sd.c:        euint32 card_capacity;
+..\efsl\source\interface\sd.c:                ^
+..\efsl\source\interface\sd.c(526): warning:  #177-D: variable "tmp16" was declared but never referenced
+..\efsl\source\interface\sd.c:        euint16 tmp16;
+..\efsl\source\interface\sd.c:                ^
+..\efsl\source\interface\sd.c(631): warning:  #111-D: statement is unreachable
+..\efsl\source\interface\sd.c:       if(max_hz >= 72000000/2 && 72000000/2 <= 18000000)
+..\efsl\source\interface\sd.c:       ^
+..\efsl\source\interface\sd.c(702): warning:  #940-D: missing return statement at end of non-void function "sdhc_readSector"
+..\efsl\source\interface\sd.c:   }
+..\efsl\source\interface\sd.c:   ^
+..\efsl\source\interface\sd.c(707): warning:  #940-D: missing return statement at end of non-void function "sdhc_writeSector"
+..\efsl\source\interface\sd.c:   }
+..\efsl\source\interface\sd.c:   ^
+..\efsl\source\interface\sd.c(703): warning:  #177-D: function "sdhc_writeSector" was declared but never referenced
+..\efsl\source\interface\sd.c:   static esint8 sdhc_writeSector(hwInterface *iface,euint32 address, euint8* buf)
+..\efsl\source\interface\sd.c:                 ^
+..\efsl\source\interface\sd.c(292): warning: C3488E: write to variable 'cmd_buffercrc' with offset out of bounds
+..\efsl\source\interface\sd.c: }
+..\efsl\source\interface\sd.c: ^
+..\efsl\source\interface\sd.c: ..\efsl\source\interface\sd.c: 10 warnings, 0 errors
+compiling sd_stm32.c...
+compiling fsdata.c...
+compiling httpd.c...
+..\httpserver_raw\src\httpd.c(645): warning:  #236-D: controlling expression is constant
+..\httpserver_raw\src\httpd.c:     LWIP_ASSERT("length != NULL", length != NULL);
+..\httpserver_raw\src\httpd.c:     ^
+..\httpserver_raw\src\httpd.c(1272): warning:  #236-D: controlling expression is constant
+..\httpserver_raw\src\httpd.c:     LWIP_ASSERT("SSI and DYNAMIC_HEADERS turned off but eof not reached", 0);
+..\httpserver_raw\src\httpd.c:     ^
+..\httpserver_raw\src\httpd.c(2016): warning:  #236-D: controlling expression is constant
+..\httpserver_raw\src\httpd.c:     LWIP_ASSERT("p != NULL", p != NULL);
+..\httpserver_raw\src\httpd.c:     ^
+..\httpserver_raw\src\httpd.c(2017): warning:  #236-D: controlling expression is constant
+..\httpserver_raw\src\httpd.c:     LWIP_ASSERT("hs != NULL", hs != NULL);
+..\httpserver_raw\src\httpd.c:     ^
+..\httpserver_raw\src\httpd.c(2194): warning:  #177-D: variable "loop" was declared but never referenced
+..\httpserver_raw\src\httpd.c:     size_t loop;
+..\httpserver_raw\src\httpd.c:            ^
+..\httpserver_raw\src\httpd.c(2483): warning:  #236-D: controlling expression is constant
+..\httpserver_raw\src\httpd.c:       LWIP_ASSERT("File length must be positive!", (file->len >= 0));
+..\httpserver_raw\src\httpd.c:       ^
+..\httpserver_raw\src\httpd.c(2490): warning:  #236-D: controlling expression is constant
+..\httpserver_raw\src\httpd.c:       LWIP_ASSERT("HTTP headers not included in file system", hs->handle->http_header_included);
+..\httpserver_raw\src\httpd.c:       ^
+..\httpserver_raw\src\httpd.c(2667): warning:  #236-D: controlling expression is constant
+..\httpserver_raw\src\httpd.c:         LWIP_ASSERT("http_parse_request: unexpected return value", parsed == ERR_OK
+..\httpserver_raw\src\httpd.c:         ^
+..\httpserver_raw\src\httpd.c(2716): warning:  #236-D: controlling expression is constant
+..\httpserver_raw\src\httpd.c:     tcp_accepted(lpcb);
+..\httpserver_raw\src\httpd.c:     ^
+..\httpserver_raw\src\httpd.c(2752): warning:  #236-D: controlling expression is constant
+..\httpserver_raw\src\httpd.c:     LWIP_ASSERT("httpd_init: tcp_new failed", pcb != NULL);
+..\httpserver_raw\src\httpd.c:     ^
+..\httpserver_raw\src\httpd.c(2756): warning:  #236-D: controlling expression is constant
+..\httpserver_raw\src\httpd.c:     LWIP_ASSERT("httpd_init: tcp_bind failed", err == ERR_OK);
+..\httpserver_raw\src\httpd.c:     ^
+..\httpserver_raw\src\httpd.c(2759): warning:  #236-D: controlling expression is constant
+..\httpserver_raw\src\httpd.c:     LWIP_ASSERT("httpd_init: tcp_listen failed", pcb != NULL);
+..\httpserver_raw\src\httpd.c:     ^
+..\httpserver_raw\src\httpd.c: ..\httpserver_raw\src\httpd.c: 12 warnings, 0 errors
+compiling fs_lwip.c...
+..\httpserver_raw\src\fs_lwip.c(41): warning:  #177-D: variable "dummy_align__img_sics_gif" was declared but never referenced
+..\httpserver_raw\src\fs_lwip.c:   static const unsigned int dummy_align__img_sics_gif = 0;
+..\httpserver_raw\src\fs_lwip.c:                             ^
+..\httpserver_raw\src\fs_lwip.c(110): warning:  #177-D: variable "dummy_align__404_html" was declared but never referenced
+..\httpserver_raw\src\fs_lwip.c:   static const unsigned int dummy_align__404_html = 1;
+..\httpserver_raw\src\fs_lwip.c:                             ^
+..\httpserver_raw\src\fs_lwip.c(169): warning:  #177-D: variable "dummy_align__index_html" was declared but never referenced
+..\httpserver_raw\src\fs_lwip.c:   static const unsigned int dummy_align__index_html = 2;
+..\httpserver_raw\src\fs_lwip.c:                             ^
+..\httpserver_raw\src\fs_lwip.c: ..\httpserver_raw\src\fs_lwip.c: 3 warnings, 0 errors
+compiling smtp.c...
+..\smtp\smtp.c(496): warning:  #520-D: initialization with "{...}" expected for aggregate object
+..\smtp\smtp.c:   unsigned int  smtp_Tcp_count[10]=0;
+..\smtp\smtp.c:                                    ^
+..\smtp\smtp.c(505): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("no smtp_session supplied", s != NULL);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(690): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string is too long", len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(694): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string is too long", len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(698): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string is too long", len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(702): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string is too long", len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(733): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("smtp_send_mail_int: no argument given", arg != NULL);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(956): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("target_len is too short", target_len >= len);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1056): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("ipaddr_ntoa returned NULL", ipa != NULL);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1058): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string too long", ipa_len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1061): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1088): warning:  #177-D: variable "sep" was declared but never referenced
+..\smtp\smtp.c:           char *sep = s->tx_buf + SMTP_KEYWORD_AUTH_LEN;
+..\smtp\smtp.c:                 ^
+..\smtp\smtp.c(1136): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string too long", base64_len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1137): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", base64_len + SMTP_CRLF_LEN <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1152): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("string too long", base64_len <= 0xffff);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1153): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", base64_len + SMTP_CRLF_LEN <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1168): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1185): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1204): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c(1231): warning:  #236-D: controlling expression is constant
+..\smtp\smtp.c:     LWIP_ASSERT("tx_buf overflow detected", *tx_buf_len <= SMTP_TX_BUF_LEN);
+..\smtp\smtp.c:     ^
+..\smtp\smtp.c: ..\smtp\smtp.c: 20 warnings, 0 errors
+compiling snmp_app.c...
+..\smtp\snmp_app.c(42): warning:  #1-D: last line of file ends without a newline
+..\smtp\snmp_app.c:   #endif                                                                               
+..\smtp\snmp_app.c:                                                                                        ^
+..\smtp\snmp_app.c: ..\smtp\snmp_app.c: 1 warning, 0 errors
+compiling mb_m.c...
+..\modbus\freemodbus-v1.6.0\modbus\mb_m.c(263): warning:  #177-D: variable "ucFunctionCode" was declared but never referenced
+..\modbus\freemodbus-v1.6.0\modbus\mb_m.c:       static UCHAR    ucFunctionCode;
+..\modbus\freemodbus-v1.6.0\modbus\mb_m.c:                       ^
+..\modbus\freemodbus-v1.6.0\modbus\mb_m.c(265): warning:  #550-D: variable "eException" was set but never used
+..\modbus\freemodbus-v1.6.0\modbus\mb_m.c:       static eMBException eException;
+..\modbus\freemodbus-v1.6.0\modbus\mb_m.c:                           ^
+..\modbus\freemodbus-v1.6.0\modbus\mb_m.c: ..\modbus\freemodbus-v1.6.0\modbus\mb_m.c: 2 warnings, 0 errors
+compiling mbrtu_m.c...
+..\modbus\freemodbus-v1.6.0\modbus\rtu\mbrtu_m.c(219): warning:  #177-D: variable "usCRC16" was declared but never referenced
+..\modbus\freemodbus-v1.6.0\modbus\rtu\mbrtu_m.c:       USHORT          usCRC16;
+..\modbus\freemodbus-v1.6.0\modbus\rtu\mbrtu_m.c:                       ^
+..\modbus\freemodbus-v1.6.0\modbus\rtu\mbrtu_m.c: ..\modbus\freemodbus-v1.6.0\modbus\rtu\mbrtu_m.c: 1 warning, 0 errors
+compiling mbcrc.c...
+compiling modbus_main.c...
+..\modbus\User\modbus_main.c(73): warning:  #223-D: function "eMBMasterInit" declared implicitly
+..\modbus\User\modbus_main.c:       eStatus = eMBMasterInit( MB_RTU, 2, 9600,MB_PAR_NONE );
+..\modbus\User\modbus_main.c:                 ^
+..\modbus\User\modbus_main.c(73): warning:  #188-D: enumerated type mixed with another type
+..\modbus\User\modbus_main.c:       eStatus = eMBMasterInit( MB_RTU, 2, 9600,MB_PAR_NONE );
+..\modbus\User\modbus_main.c:               ^
+..\modbus\User\modbus_main.c(78): warning:  #223-D: function "eMBMasterEnable" declared implicitly
+..\modbus\User\modbus_main.c:       eStatus = eMBMasterEnable();
+..\modbus\User\modbus_main.c:                 ^
+..\modbus\User\modbus_main.c(78): warning:  #188-D: enumerated type mixed with another type
+..\modbus\User\modbus_main.c:       eStatus = eMBMasterEnable();
+..\modbus\User\modbus_main.c:               ^
+..\modbus\User\modbus_main.c(104): warning:  #223-D: function "eMBMasterPoll" declared implicitly
+..\modbus\User\modbus_main.c:                           (void)eMBMasterPoll();
+..\modbus\User\modbus_main.c:                                 ^
+..\modbus\User\modbus_main.c(58): warning:  #550-D: variable "eStatus" was set but never used
+..\modbus\User\modbus_main.c:       eMBErrorCode    eStatus;
+..\modbus\User\modbus_main.c:                       ^
+..\modbus\User\modbus_main.c(121): warning:  #223-D: function "vMBMasterGetPDUSndBuf" declared implicitly
+..\modbus\User\modbus_main.c:                     vMBMasterGetPDUSndBuf( &p );   //The 1st  we get the pdu buffer point
+..\modbus\User\modbus_main.c:                     ^
+..\modbus\User\modbus_main.c(130): warning:  #223-D: function "eMBMasterRTUSend" declared implicitly
+..\modbus\User\modbus_main.c:                       eMBMasterRTUSend( Slave_addr, p, len );     //      start up snet status machin and excution sent data on RTU 
+..\modbus\User\modbus_main.c:                       ^
+..\modbus\User\modbus_main.c(17): warning:  #177-D: variable "t32" was declared but never referenced
+..\modbus\User\modbus_main.c:             static  uint32_t t32=0;
+..\modbus\User\modbus_main.c:                              ^
+..\modbus\User\modbus_main.c: ..\modbus\User\modbus_main.c: 9 warnings, 0 errors
+compiling usart.c...
+compiling porttimer_m.c...
+compiling portserial_m.c...
+..\modbus\freemodbus-v1.6.0\port\portserial_m.c(269): warning:  #1-D: last line of file ends without a newline
+..\modbus\freemodbus-v1.6.0\port\portserial_m.c:   #endif
+..\modbus\freemodbus-v1.6.0\port\portserial_m.c:         ^
+..\modbus\freemodbus-v1.6.0\port\portserial_m.c: ..\modbus\freemodbus-v1.6.0\port\portserial_m.c: 1 warning, 0 errors
+compiling portevent_m.c...
+compiling port.c...
+compiling pidctrl.c...
+..\pid\pidctrl.h(65): warning:  #1295-D: Deprecated declaration AutoRunPowerAdjTask - give arg types
+..\pid\pidctrl.h:   void AutoRunPowerAdjTask();
+..\pid\pidctrl.h:        ^
+..\pid\pidctrl.c(354): warning:  #940-D: missing return statement at end of non-void function "ProcessTcpSrting"
+..\pid\pidctrl.c:   }
+..\pid\pidctrl.c:   ^
+..\pid\pidctrl.c(523): warning:  #223-D: function "printf" declared implicitly
+..\pid\pidctrl.c:           printf("setpoint,value,P,I,D,error,i_total,int_windup\n");
+..\pid\pidctrl.c:           ^
+..\pid\pidctrl.c(641): warning:  #223-D: function "printf" declared implicitly
+..\pid\pidctrl.c:           printf("%.1f,%.1f,%.1f,%.1f,%.1f,%.1f,%.1f,%d\n", 
+..\pid\pidctrl.c:           ^
+..\pid\pidctrl.c(1037): warning:  #1-D: last line of file ends without a newline
+..\pid\pidctrl.c:   */
+..\pid\pidctrl.c:     ^
+..\pid\pidctrl.c: ..\pid\pidctrl.c: 5 warnings, 0 errors
+compiling ds12864.c...
+..\key\key.h(37): warning:  #1-D: last line of file ends without a newline
+..\key\key.h:   #endif
+..\key\key.h:         ^
+..\DS12864\ds12864.c(427): warning:  #223-D: function "memcpy" declared implicitly
+..\DS12864\ds12864.c:              memcpy(&RunStat_ds12864[Start],"运行",6);
+..\DS12864\ds12864.c:              ^
+..\DS12864\ds12864.c(431): warning:  #223-D: function "memcpy" declared implicitly
+..\DS12864\ds12864.c:              memcpy(&RunStat_ds12864[Start],"停止",6);
+..\DS12864\ds12864.c:              ^
+..\DS12864\ds12864.c(422): warning:  #177-D: variable "d" was declared but never referenced
+..\DS12864\ds12864.c:   {        static char d=0,b=0;
+..\DS12864\ds12864.c:                        ^
+..\DS12864\ds12864.c(422): warning:  #177-D: variable "b" was declared but never referenced
+..\DS12864\ds12864.c:   {        static char d=0,b=0;
+..\DS12864\ds12864.c:                            ^
+..\DS12864\ds12864.c(506): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+..\DS12864\ds12864.c:                      print(line1); 
+..\DS12864\ds12864.c:                            ^
+..\DS12864\ds12864.c(508): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+..\DS12864\ds12864.c:                      print(line2); 
+..\DS12864\ds12864.c:                            ^
+..\DS12864\ds12864.c(510): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+..\DS12864\ds12864.c:                      print(line3);
+..\DS12864\ds12864.c:                            ^
+..\DS12864\ds12864.c(512): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+..\DS12864\ds12864.c:                      print(line4);
+..\DS12864\ds12864.c:                            ^
+..\DS12864\ds12864.c(520): warning:  #1-D: last line of file ends without a newline
+..\DS12864\ds12864.c:   #endif
+..\DS12864\ds12864.c:         ^
+..\DS12864\ds12864.c: ..\DS12864\ds12864.c: 10 warnings, 0 errors
+compiling key.c...
+..\key\key.h(37): warning:  #1-D: last line of file ends without a newline
+..\key\key.h:   #endif
+..\key\key.h:         ^
+..\key\key.c(198): warning:  #177-D: variable "flage" was declared but never referenced
+..\key\key.c:   static char flage=0;
+..\key\key.c:               ^
+..\key\key.c: ..\key\key.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=60744 RO-data=900 RW-data=1660 ZI-data=49276  
+FromELF: creating hex file...
+".\obj\lwip_gnu.axf" - 0 Error(s), 302 Warning(s).

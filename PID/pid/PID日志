@@ -1,0 +1,105 @@
+
+
+
+
+
+
+
+
+
+
+20160706建立准备搞恒温程序
+
+
+输入要求18B20采集，输出是可控硅的加热棒
+
+
+完成输入和输出的程序，
+输出是BTA16，换为SSR 加ULN2004修改一下触发引脚即可
+输入改成单DS18B20c采样
+20160712
+
+
+
+float ProcessTcpSrting(char *buf,char*str)
+{
+	   char *location;
+	   uint8_t val[50],i,j,k;
+	   float finteger=0,fdecimal=0,fresult=0;
+
+	  location=	strstr(buf,str);
+	
+	   if(*(location+2)=='=') 
+	   {
+	   	  for(i=0;i<50;i++)
+	   	   {
+			    val[i] = *(location+2+i);
+
+				if(val[i]=='.')
+				{
+				   	    k=i-1;
+						j=0;
+						finteger=0;
+					while(1)
+					{
+					
+						finteger+=(float)((val[k]-0x30)*pow(10,j));
+						  j++;
+						  k--;
+						 if(val[k]=='=')break;
+					}
+
+
+				}
+
+				if(val[i]==0x20)
+				{
+					   	k=i-1;
+						j=0;
+					  fdecimal=0;
+					  while(1)
+					  {
+						 
+						  
+					  fdecimal+=(float)((val[k]-0x30)*pow(10,j));
+					  k--;
+					  j++;
+						  if(val[k]=='.')
+						  {
+						  fdecimal=fdecimal/pow(10,j);	
+						  fresult=fdecimal+finteger;
+					      return  fresult;
+						  }
+						 
+					  
+					  }
+
+			
+				  
+				} 
+
+			}
+			
+	   		 return -1;
+	   }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+ /*
+                要求发送数据为：【pidset:kp=1.01,ki=3.1,kd=1.5,sp=20.01,】逗号必须加。 
+				全部带小数点，不限制小数位数
+ */
+
+ 增加TCP端口2302的输出PID参数整定可调整
+ 20160714
